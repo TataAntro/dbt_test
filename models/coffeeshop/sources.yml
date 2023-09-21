@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: coffee_shop_src
+    database: postgres  
+    schema: coffe_shop_source  
+    tables:
+      - name: product
+      - name: customer
+      - name: sales
+      - name: staff
+  - name: stage_src
+    database: postgres
+    schema: stage
+    tables:
+      - name: last_month_sales
